@@ -25,7 +25,7 @@ app.MapGet("/{municipalityId:int}/meteo", async (int municipalityId, IWeatherSer
 
     return Results.Ok(municipalityGeo);
 })
-.WithName("GetGeographicInfoByMunicaplityId")
+.WithName("GetMeteorologicInfoByMunicaplityId")
 .WithOpenApi();
 
 app.Run();
